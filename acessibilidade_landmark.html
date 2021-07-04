@@ -15,17 +15,17 @@
 
 <body>
     <header role="banner">
-        <nav role="navigation">
+        <nav role="navigation" aria-level="main navigation">
             <ul role="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Contatos</a></li>
-                <li><a href="#">Conteúdo</a></li>
+                <li><a href="#" role="menuitem">Home</a></li>
+                <li><a href="#" role="menuitem">Quem somos</a></li>
+                <li><a href="#" role="menuitem">Contatos</a></li>
+                <li><a href="#" role="menuitem">Conteúdo</a></li>
             </ul>
         </nav>
     </header>
    
-    <main>
+    <main role="main">
 
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         
@@ -51,6 +51,8 @@
         </form>
     
     </main>
-    <footer></footer>
+    <footer role="contentinfo">
+        2020 gama academy curso
+    </footer>
 </body>
 </html>

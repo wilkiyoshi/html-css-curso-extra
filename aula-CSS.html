@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página exercício curso extra HTML</title>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="texto descritivo da página"/>
+    <meta name="author" content="Gama academy"/>
+    <meta name="viewport" content="width=device-width, initial-scaled=1.0"/>
+    <style type="text/css">
+        body{
+            background-color: white;
+        }
+        div{
+            /*border: solid 2px red;*/ /*shorthand*/
+            border-color: red;
+            border-style: solid;
+            border-left: 2px;
+            border-right: 2px;
+            border-bottom: 2px;
+            border-top: 2px;
+            font-family:'Courier New', Courier, monospace;/*fallback de fontes*/
+
+        }
+
+        .parent-container{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            background-color: cadetblue;
+        }
+
+        .mydiv{
+            border: 2px dashed red;
+            padding: 2px 2px;
+            margin:  4px 4px;
+        }
+
+        .div1{
+            color:#0000ff;
+            font-size: 32px;
+            font-weight: 900;
+            background-color: seagreen;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .div2{
+            color:red;
+            font-size: 25px;
+            font-weight: bold;
+            background-color: skyblue;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .div3{
+            color: rgba(255, 0,0,0.5);
+            font-size: 15px;
+            font-weight: 100;
+            background-color: violet;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .flexdiv{
+            display: flex;
+            background-color: white;
+            border: 1px solid black;
+            flex-wrap: wrap;
+            flex-direction:column-reverse;
+        }
+
+        .child-div{
+            border: 1px solid black;
+            width: 20px;
+            font-size: 32px;
+        }
+
+    </style>
+    <!--<link rel="stylesheet" type="text/css" href="estilo.css"/>-->
+    <!--<script type="text/javascript">
+        alert ("oi mundo");
+    </script>-->
+    <!--<script type="text/javascript" src="script.js"></script>-->
+</head>
+
+<body>
+    <head></head>
+    <main>
+        <img src="marvel/Marvel_Logo.svg.png" alt="logo da marvel" title="logo da marvel" aria-labelledby="descricao-logo"/>
+
+        <div id="div1"><p id="descricao-logo">logo da marvel</p></div>      
+
+         <button id="botao1" onclick="atualizacao();">Atualização texto</button> <br><br>
+
+         <div class="parent-container"><div class="mydiv">Olá mundo</div></div><br>
+
+            <div class="div1">Olá mundo</div>
+            <div class="div2">Olá mundo</div>
+            <div class="div3">Olá mundo</div>
+<br>
+
+        <div class="flexdiv">
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+            <div class="child-div">1</div>
+            <div class="child-div">2</div>
+            <div class="child-div">3</div>
+        </div>
+
+         <script type="text/javascript">
+            
+            var paragrafo = document.getElementById("descricao-logo");
+            paragrafo.style.color="green";
+            paragrafo.innerText = "texto inicial carregado";
+
+            function atualizacao(){
+                var texto1 = document.getElementById("descricao-logo");
+                texto1.innerText= "texto atualização via function chamada no botão";
+                texto1.style.color="blue";
+                document.getElementById("div1").style.backgroundColor="white";
+            }
+
+         </script>
+    </main>
+    <footer></footer>
+</body>
+</html>

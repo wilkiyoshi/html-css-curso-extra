@@ -64,7 +64,7 @@
             background-color: white;
             border: 1px solid black;
             flex-wrap: wrap;
-            flex-direction:column-reverse;
+            justify-content: space-around;
         }
 
         .child-div{
@@ -73,6 +73,48 @@
             font-size: 32px;
         }
 
+        .child-div1{
+            border: 1px solid black;
+            width: 20px;
+            font-size: 32px;
+            flex-basis: 100px;
+            flex-grow: 2;
+        }
+
+        .child-div2{
+            border: 1px solid black;
+            width: 20px;
+            font-size: 32px;
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+
+        .child-div3{
+            border: 1px solid black;
+            width: 20px;
+            font-size: 32px;
+            flex-shrink: 1;
+        }
+
+        .mydiv3{
+            color: red;
+        }
+
+        .mydiv3::first-letter{/*pseudo elemento primeira letra*/
+            font-size: 30px;
+        }
+
+        #myinput{
+            background-color: dodgerblue;
+        }
+
+        #myinput:hover{
+            background-color: green;
+        }
+
+        span[gama-academy]{
+            color: greenyellow;
+        }
     </style>
     <!--<link rel="stylesheet" type="text/css" href="estilo.css"/>-->
     <!--<script type="text/javascript">
@@ -98,7 +140,10 @@
 <br>
 
         <div class="flexdiv">
-            <div class="child-div">1</div>
+            <div class="child-div1">1</div>
+            <div class="child-div2">2</div>
+            <div class="child-div3">3</div>
+            <!--<div class="child-div">1</div>
             <div class="child-div">2</div>
             <div class="child-div">3</div>
             <div class="child-div">1</div>
@@ -115,29 +160,14 @@
             <div class="child-div">3</div>
             <div class="child-div">1</div>
             <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
-            <div class="child-div">1</div>
-            <div class="child-div">2</div>
-            <div class="child-div">3</div>
+            <div class="child-div">3</div>-->
         </div>
+<br><br>
+        <div class="mydiv3">
+            Olá mundo!
+        </div>
+        <input id="myinput"/>
+        <span gama-academy>Gama academy</span>
 
          <script type="text/javascript">
             

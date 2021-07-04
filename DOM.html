@@ -53,11 +53,19 @@
             </tfoot>
          </table>
 
+         <button id="botao1" onclick="atualizacao();">Atualização texto</button>
+
          <script type="text/javascript">
             
             var paragrafo = document.getElementById("descricao-logo");
             paragrafo.style.color="red";
             paragrafo.innerText = "texto mudou";
+
+            function atualizacao(){
+                var texto1 = document.getElementById("descricao-logo");
+                texto1.innerText= "texto atualização via function chamada no botão";
+                texto1.style.color="blue";
+            }
 
          </script>
     </main>
